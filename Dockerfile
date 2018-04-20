@@ -9,4 +9,4 @@ RUN htpasswd -b -c /etc/squid/password username password
 
 COPY squid.conf /etc/squid/
 
-ENTRYPOINT ["/usr/bin/squid"]
+CMD ["/usr/sbin/squid", "-NYCd", "1"]

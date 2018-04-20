@@ -2,11 +2,11 @@
 
 Squid with basic auth installed in Docker-container.
 
-Modify user and password in Dockerfile in line
+Modify user and password if u ain't happy with default credentials in Dockerfile
 
     RUN htpasswd -b -c /etc/squid/password user password
 
-and build Docker-image if u aint happy with default credentials
+and build Docker-image
 
     docker build -t squid .
 
